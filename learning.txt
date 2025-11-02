@@ -19,3 +19,16 @@ Another way of do stories
 type StoryProps = ComponentProps<typeof Button> & {
     buttonText: string; // Text to display in the button but not as a child of the button and not a prop of the button
 };
+
+function createChildren(numberOfChildren: number){
+    return Array(numberOfChildren)
+        .fill(null)
+        .map((_, index) => '{
+            return (
+                <div
+                    key={index}
+                    style{{width: 100, height: 100, backgroundColor: 'red'}}
+                />
+            );
+        });
+}

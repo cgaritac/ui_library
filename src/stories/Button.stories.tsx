@@ -74,3 +74,106 @@ export const Secondary: Story = {
     },
     render: ({buttonText, ...args}) => <Button {...args}><span>{buttonText}</span></Button>,
 };
+
+export const WithChildren: Story = {
+    args: {
+        buttonText: 'Button with multiple children: ',
+        children: [
+            <span>Hello</span>,
+            <span> - </span>,
+            <span>World</span>,
+        ],
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'Buttons with children',
+            },
+        },
+    },
+    render: ({buttonText, children, ...args}) => (
+        <Button {...args}>
+            <span>{buttonText}</span>
+            {children}
+        </Button>
+    ),
+};
+
+export const disabled: Story = {
+    args: {
+        buttonText: 'Disabled button',
+        disabled: true,
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'Disabled buttons',
+            },
+        },
+    },
+    render: ({buttonText, ...args}) => <Button {...args}><span>{buttonText}</span></Button>,
+};
+
+export const Small: Story = {
+    args: {
+        buttonText: 'Small button',
+        size: 'small',
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'Small buttons',
+            },
+        },
+    },
+    render: ({buttonText, ...args}) => <Button {...args}><span>{buttonText}</span></Button>,
+};
+
+export const Medium: Story = {
+    args: {
+        buttonText: 'Medium button',
+        size: 'medium',
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'Medium buttons',
+            },
+        },
+    },
+    render: ({buttonText, ...args}) => <Button {...args}><span>{buttonText}</span></Button>,
+};
+
+export const Large: Story = {
+    args: {
+        buttonText: 'Large button',
+        size: 'large',
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'Large buttons',
+            },
+        },
+    },
+    render: ({buttonText, ...args}) => <Button {...args}><span>{buttonText}</span></Button>,
+};
+
+export const Full: Story = {
+    args: {
+        buttonText: 'Full button',
+        size: 'full',
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'Full buttons',
+            },
+        },
+    },
+    render: ({buttonText, ...args}) => <div className="cgc--story-container" >
+                                            <Button {...args}>
+                                                <span>{buttonText}</span>
+                                            </Button>
+                                        </div>,
+};

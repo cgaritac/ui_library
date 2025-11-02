@@ -1,15 +1,14 @@
-import React from 'react';
+import React, { type CSSProperties, type PropsWithChildren } from 'react';
 import './button.css';
 
-interface ButtonProps {
-  children: React.ReactNode;
+type ButtonProps = PropsWithChildren<{
   primary?: boolean;
   size?: 'small' | 'medium' | 'large' | 'full';
   backgroundColor?: string;
   disabled?: boolean;
   type?: 'button' | 'submit' | 'reset';
   onClick?: () => void;
-}
+}>;
 
 export const Button: React.FC<ButtonProps> = ({ 
     children,
@@ -21,12 +20,15 @@ export const Button: React.FC<ButtonProps> = ({
     onClick 
 }) => {
   const mode = primary ? 'cgc-button--primary' : 'cgc-button--secondary';
-  
+  const style: CSSProperties = {
+    backgroundColor: backgroundColor,
+  };
+
   return (
     <button
       onClick={onClick}
       className={['cgc-button', `cgc-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      style={style}
       disabled={disabled}
       type={type}
     >
