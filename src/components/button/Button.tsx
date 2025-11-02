@@ -8,6 +8,7 @@ type ButtonProps = PropsWithChildren<{
   disabled?: boolean;
   type?: 'button' | 'submit' | 'reset';
   onClick?: () => void;
+  'aria-label'?: string;
 }>;
 
 export const Button: React.FC<ButtonProps> = ({ 
@@ -17,7 +18,8 @@ export const Button: React.FC<ButtonProps> = ({
     backgroundColor,
     disabled = false,
     type = 'button',
-    onClick 
+    onClick,
+    'aria-label': ariaLabel
 }) => {
   const mode = primary ? 'cgc-button--primary' : 'cgc-button--secondary';
   const style: CSSProperties = {
@@ -31,8 +33,9 @@ export const Button: React.FC<ButtonProps> = ({
       style={style}
       disabled={disabled}
       type={type}
+      aria-label={ariaLabel}
     >
-        {children}
+      {children}
     </button>
   );
 };

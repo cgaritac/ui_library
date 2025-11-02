@@ -39,4 +39,14 @@
   .cgc-button--disabled {
     opacity: 0.5;
     cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  .cgc-button:focus-visible {
+    outline: 2px solid #4d53b8;
+    outline-offset: 2px;
+  }
+
+  .cgc-button:disabled {
+    cursor: not-allowed;
   }
