@@ -1,58 +1,58 @@
 # 🎨 CGC UI Library
 
-Una biblioteca de componentes UI moderna y profesional construida con React y TypeScript. Diseñada para ser flexible, accesible y fácil de usar, proporcionando componentes reutilizables que siguen las mejores prácticas de desarrollo frontend.
+A modern and professional UI component library built with React and TypeScript. Designed to be flexible, accessible, and easy to use, providing reusable components that follow frontend development best practices.
 
-## ✨ Características
+## ✨ Features
 
-- 🚀 **Construida con React 19** - Utiliza la última versión de React para un rendimiento óptimo
-- 📘 **TypeScript First** - Tipado estático para una mejor experiencia de desarrollo
-- 🎭 **Storybook Integrado** - Documentación interactiva y playground para todos los componentes
-- ♿ **Accesible** - Componentes diseñados siguiendo las mejores prácticas de accesibilidad
-- 🎨 **Altamente Personalizable** - Estilos modulares y fácilmente personalizables
-- 📦 **Ligera y Moderna** - Construida con Vite para un desarrollo y build rápidos
+- 🚀 **Built with React 19** - Uses the latest version of React for optimal performance
+- 📘 **TypeScript First** - Static typing for a better development experience
+- 🎭 **Integrated Storybook** - Interactive documentation and playground for all components
+- ♿ **Accessible** - Components designed following accessibility best practices
+- 🎨 **Highly Customizable** - Modular and easily customizable styles
+- 📦 **Lightweight and Modern** - Built with Vite for fast development and builds
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 
 - **React** 19.1.1
 - **TypeScript** ~5.9.3
-- **Vite** 7.1.7 - Build tool y dev server
-- **Storybook** 10.0.0 - Documentación y desarrollo de componentes
-- **Vitest** 4.0.4 - Framework de testing
-- **Playwright** - Testing en navegador
-- **ESLint** - Linting y calidad de código
+- **Vite** 7.1.7 - Build tool and dev server
+- **Storybook** 10.0.0 - Component documentation and development
+- **Vitest** 4.0.4 - Testing framework
+- **Playwright** - Browser testing
+- **ESLint** - Linting and code quality
 
-## 📦 Instalación
+## 📦 Installation
 
-### Prerrequisitos
+### Prerequisites
 
-- Node.js (versión 18 o superior)
-- npm, yarn o pnpm
+- Node.js (version 18 or higher)
+- npm, yarn, or pnpm
 
-### Pasos
+### Steps
 
-1. Clona el repositorio:
+1. Clone the repository:
 ```bash
 git clone https://github.com/tu-usuario/ui_library.git
 cd ui_library
 ```
 
-2. Instala las dependencias:
+2. Install dependencies:
 ```bash
 yarn install
-# o
+# or
 npm install
 ```
 
-3. Inicia el servidor de desarrollo:
+3. Start the development server:
 ```bash
 yarn dev
-# o
+# or
 npm run dev
 ```
 
-## 🚀 Uso
+## 🚀 Usage
 
-### Ejemplo Básico
+### Basic Example
 
 ```tsx
 import { Button } from '@/components/button/Button';
@@ -61,51 +61,51 @@ import Stack from '@/components/stack/Stack';
 function App() {
   return (
     <Stack orientation="vertical">
-      <Button primary size="large" onClick={() => alert('¡Hola!')}>
-        Botón Principal
+      <Button primary size="large" onClick={() => alert('Hello!')}>
+        Primary Button
       </Button>
       <Button primary={false} size="medium">
-        Botón Secundario
+        Secondary Button
       </Button>
     </Stack>
   );
 }
 ```
 
-## 📚 Componentes Disponibles
+## 📚 Available Components
 
 ### Button
 
-Componente de botón completamente personalizable con múltiples variantes y tamaños.
+A fully customizable button component with multiple variants and sizes.
 
 **Props:**
-- `primary?: boolean` - Estilo principal o secundario
-- `size?: 'small' | 'medium' | 'large' | 'full'` - Tamaño del botón
-- `backgroundColor?: string` - Color de fondo personalizado
-- `disabled?: boolean` - Estado deshabilitado
-- `type?: 'button' | 'submit' | 'reset'` - Tipo de botón HTML
-- `onClick?: () => void` - Callback de click
+- `primary?: boolean` - Primary or secondary style
+- `size?: 'small' | 'medium' | 'large' | 'full'` - Button size
+- `backgroundColor?: string` - Custom background color
+- `disabled?: boolean` - Disabled state
+- `type?: 'button' | 'submit' | 'reset'` - HTML button type
+- `onClick?: () => void` - Click callback
 
-**Ejemplo:**
+**Example:**
 ```tsx
 <Button 
   primary 
   size="large" 
   onClick={() => console.log('Clicked!')}
 >
-  Hacer clic
+  Click me
 </Button>
 ```
 
 ### Stack
 
-Componente de layout flexible para organizar elementos en fila o columna.
+A flexible layout component for organizing elements in a row or column.
 
 **Props:**
-- `orientation: 'horizontal' | 'vertical'` - Dirección del layout
-- `children: React.ReactNode` - Elementos hijos
+- `orientation: 'horizontal' | 'vertical'` - Layout direction
+- `children: React.ReactNode` - Child elements
 
-**Ejemplo:**
+**Example:**
 ```tsx
 <Stack orientation="vertical">
   <div>Item 1</div>
@@ -116,70 +116,70 @@ Componente de layout flexible para organizar elementos en fila o columna.
 
 ## 🎨 Storybook
 
-Este proyecto utiliza Storybook para documentación interactiva y desarrollo de componentes. Para visualizar todos los componentes y sus variantes:
+This project uses Storybook for interactive documentation and component development. To view all components and their variants:
 
 ```bash
 yarn storybook
-# o
+# or
 npm run storybook
 ```
 
-Esto abrirá Storybook en `http://localhost:6006` donde podrás:
-- Ver todos los componentes disponibles
-- Explorar diferentes variantes y props
-- Interactuar con los componentes en tiempo real
-- Ver la documentación de cada componente
+This will open Storybook at `http://localhost:6006` where you can:
+- View all available components
+- Explore different variants and props
+- Interact with components in real-time
+- View documentation for each component
 
-Para construir una versión estática de Storybook:
+To build a static version of Storybook:
 
 ```bash
 yarn build-storybook
-# o
+# or
 npm run build-storybook
 ```
 
-## 📜 Scripts Disponibles
+## 📜 Available Scripts
 
-- `yarn dev` - Inicia el servidor de desarrollo Vite
-- `yarn build` - Construye la aplicación para producción
-- `yarn preview` - Previsualiza el build de producción
-- `yarn lint` - Ejecuta ESLint para verificar la calidad del código
-- `yarn storybook` - Inicia Storybook en modo desarrollo
-- `yarn build-storybook` - Construye una versión estática de Storybook
+- `yarn dev` - Starts the Vite development server
+- `yarn build` - Builds the application for production
+- `yarn preview` - Previews the production build
+- `yarn lint` - Runs ESLint to check code quality
+- `yarn storybook` - Starts Storybook in development mode
+- `yarn build-storybook` - Builds a static version of Storybook
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 ui_library/
 ├── src/
-│   ├── components/          # Componentes de la librería
+│   ├── components/          # Library components
 │   │   ├── button/
 │   │   └── stack/
-│   ├── stories/             # Stories de Storybook
-│   └── assets/              # Recursos estáticos
-├── public/                  # Archivos públicos
-├── .storybook/              # Configuración de Storybook
+│   ├── stories/             # Storybook stories
+│   └── assets/              # Static resources
+├── public/                  # Public files
+├── .storybook/              # Storybook configuration
 └── package.json
 ```
 
-## 🤝 Contribuir
+## 🤝 Contributing
 
-Las contribuciones son bienvenidas. Por favor:
+Contributions are welcome. Please:
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+1. Fork the project
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📝 Licencia
+## 📝 License
 
-Este proyecto es privado. Todos los derechos reservados.
+This project is private. All rights reserved.
 
-## 👤 Autor
+## 👤 Author
 
 **CGC**
 
 ---
 
-⭐ Si este proyecto te resulta útil, ¡no olvides darle una estrella!
+⭐ If you find this project useful, don't forget to give it a star!
