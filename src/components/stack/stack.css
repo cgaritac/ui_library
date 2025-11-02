@@ -14,3 +14,23 @@
 .cgc-stack--vertical {
     flex-direction: column;
 }
+
+.cgc-stack--gap-1 {
+    gap: 0.25rem;
+}
+
+.cgc-stack--gap-2 {
+    gap: 0.5rem;
+}
+
+.cgc-stack--gap-3 {
+    gap: 0.75rem;
+}
+
+.cgc-stack--gap-4 {
+    gap: 1rem;
+}
+
+.cgc-stack--gap-5 {
+    gap: 1.25rem;
+}
