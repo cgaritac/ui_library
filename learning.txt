@@ -1,0 +1,21 @@
+Another way of do stories
+// Other way to pass the text to the button
+// export const Primary: Story = {
+//     args: {
+//         children: <span>Button</span>,
+//         primary: true,
+//     },
+//     render: (args) => <Button {...args} />,
+// };
+
+// export const Primary: Story = {
+//     args: {
+//         primary: true,
+//     },
+//     render: (args) => <Button {...args}><span>Button</span></Button>,
+// };
+
+
+type StoryProps = ComponentProps<typeof Button> & {
+    buttonText: string; // Text to display in the button but not as a child of the button and not a prop of the button
+};
