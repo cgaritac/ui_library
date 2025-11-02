@@ -1,7 +1,7 @@
 import React, { type CSSProperties, type PropsWithChildren } from 'react';
 import './button.css';
 
-type ButtonProps = PropsWithChildren<{
+export type ButtonProps = PropsWithChildren<{
   primary?: boolean;
   size?: 'small' | 'medium' | 'large' | 'full';
   backgroundColor?: string;

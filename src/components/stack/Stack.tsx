@@ -1,7 +1,7 @@
 import React, { type CSSProperties, type ElementType, type PropsWithChildren } from 'react';
 import './stack.css';
 
-type StackProps = PropsWithChildren<{
+export type StackProps = PropsWithChildren<{
   orientation: 'horizontal' | 'vertical';
   gap?: '1' | '2' | '3' | '4' | '5';
   backgroundColor?: string;

@@ -1,0 +1,44 @@
+# Source files
+src/
+.storybook/
+storybook-static/
+
+# Development files
+node_modules/
+*.log
+*.lock
+yarn.lock
+
+# Config files
+vite.config.ts
+tsconfig*.json
+eslint.config.js
+vitest.shims.d.ts
+
+# Testing
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+coverage/
+
+# Development
+index.html
+public/
+learning.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Build artifacts (only dist should be included)
+*.tsbuildinfo
+
+PUBLISHING.md
+
