@@ -1,4 +1,4 @@
-import React, { type CSSProperties, type PropsWithChildren } from 'react';
+import React, { type CSSProperties, type ElementType, type PropsWithChildren } from 'react';
 import './stack.css';
 
 type StackProps = PropsWithChildren<{
@@ -9,6 +9,11 @@ type StackProps = PropsWithChildren<{
   width?: string;
   borderRadius?: string;
   padding?: string;
+  as?: ElementType;
+  'aria-label'?: string;
+  'aria-labelledby'?: string;
+  'aria-describedby'?: string;
+  role?: string;
 }>;
 
 export const Stack: React.FC<StackProps> = ({ 
@@ -20,6 +25,11 @@ export const Stack: React.FC<StackProps> = ({
     borderRadius,
     padding,
     gap = '1',
+    as: Component = 'div',
+    'aria-label': ariaLabel,
+    'aria-labelledby': ariaLabelledBy,
+    'aria-describedby': ariaDescribedBy,
+    role,
 }) => {
     const style: CSSProperties = {
         backgroundColor: backgroundColor,
@@ -28,11 +38,23 @@ export const Stack: React.FC<StackProps> = ({
         borderRadius: borderRadius,
         padding: padding,
     };
+
+    const className = ['cgc-stack', `cgc-stack--${orientation}`, `cgc-stack--gap-${gap}`].join(' ');
+
+    const ariaProps = {
+        ...(ariaLabel && { 'aria-label': ariaLabel }),
+        ...(ariaLabelledBy && { 'aria-labelledby': ariaLabelledBy }),
+        ...(ariaDescribedBy && { 'aria-describedby': ariaDescribedBy }),
+        ...(role && { role }),
+    };
+
   return (
-    <div 
-        className={['cgc-stack', `cgc-stack--${orientation}`, `cgc-stack--gap-${gap}`].join(' ')}
-        style={style}
-    >
-        {children}
-    </div>);
+        <Component
+            className={className}
+            style={style}
+            {...ariaProps}
+        >
+            {children}
+        </Component>
+    );
 };
