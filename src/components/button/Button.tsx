@@ -27,7 +27,7 @@ export const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={['cgc-button', `cgc-button--${size}`, mode].join(' ')}
+      className={['cgc-button', `cgc-button--${size}`, mode, disabled ? 'cgc-button--disabled' : ''].join(' ')}
       style={style}
       disabled={disabled}
       type={type}
