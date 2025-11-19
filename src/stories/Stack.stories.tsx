@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import type { ComponentProps } from "react";
-import { Stack } from "../components/stack/stack";
+import { Stack } from "../components/stack/Stack";
 import './stories.css';
 
 type StoryProps = ComponentProps<typeof Stack> & {
