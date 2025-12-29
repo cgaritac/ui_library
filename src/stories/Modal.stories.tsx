@@ -1,5 +1,5 @@
 import type { ComponentProps } from "react";
-import type { Meta } from "@storybook/react-vite";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Modal } from "../components/modal/Modal";
 import './stories.css';
 
@@ -22,3 +22,13 @@ const meta: Meta<StoryProps> = {
 };
 
 export default meta;
+
+type Story = StoryObj<StoryProps>;
+
+export const Default: Story = {
+    args: {
+        modalTitle: 'Modal Title',
+        modalContent: 'Modal Content',
+        modalFooter: 'Modal Footer',
+    },
+};
