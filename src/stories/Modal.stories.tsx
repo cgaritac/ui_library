@@ -9,7 +9,6 @@ type StoryProps = ComponentProps<typeof Modal> & {
     modalFooter: string;
 };
 
-
 const meta: Meta<StoryProps> = {
     title: 'Components/Modal',
     component: Modal,

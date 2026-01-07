@@ -6,6 +6,8 @@
     font-weight: 700;
     line-height: 1;
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 1px solid #ccc;
+    color: #434343;
 }
 
 .cgc-dropdown--small {
@@ -30,7 +32,6 @@
 .cgc-dropdown--disabled {
     opacity: 0.5;
     cursor: not-allowed;
-    pointer-events: none;
 }
 
 .cgc-dropdown:focus-visible {

@@ -5,6 +5,7 @@ export type DropdownProps = {
     options: string[];
     selectedOption: string;
     onSelect: (option: string) => void;
+    placeholder?: string;
     disabled?: boolean;
     size?: 'small' | 'medium' | 'large' | 'full';
     role?: string;
@@ -15,6 +16,7 @@ export const Dropdown:React.FC<DropdownProps> = ({
     options, 
     selectedOption, 
     onSelect, 
+    placeholder = 'Select an option',
     disabled = false,
     size = 'medium',
     role,
@@ -25,8 +27,9 @@ export const Dropdown:React.FC<DropdownProps> = ({
             value={selectedOption}
             onChange={(e) => onSelect(e.target.value)}
             role={role}
-            aria-label={ariaLabel}
             disabled={disabled}
+            aria-label={ariaLabel}
+            aria-placeholder={placeholder}
             className={[`cgc-dropdown`, `cgc-dropdown--${size}`, disabled ? `cgc-dropdown--disabled`: ''].join(' ')}
         >
             {options.map((option, index) => (
