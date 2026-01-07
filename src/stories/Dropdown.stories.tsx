@@ -182,3 +182,16 @@ export const Disabled: Story = {
         },
     },
 }
+
+export const Accessible: Story = {
+    args: {
+        'aria-label': 'Dropdown',
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'A accessible dropdown component',
+            },
+        },
+    },
+};

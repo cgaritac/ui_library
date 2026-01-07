@@ -147,6 +147,13 @@ export const Horizontal: Story = {
         amountOfChildren: 3,
         gap: '1',
     },
+    parameters: {
+        docs: {
+            description: {
+                story: 'A horizontal stack component',
+            },
+        },
+    },
     render: ({...args}) => <Stack {...args}>{createChildren(args.amountOfChildren)}</Stack>,
 };
 
@@ -154,6 +161,13 @@ export const Vertical: Story = {
     args: {
         orientation: 'vertical',
         amountOfChildren: 3,
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'A vertical stack component',
+            },
+        },
     },
     render: ({...args}) => <Stack {...args}>{createChildren(args.amountOfChildren)}</Stack>,
 };
@@ -165,6 +179,13 @@ export const Accessible: Story = {
         'aria-label': 'Navigation Stack',
         gap: '2',
     },
+    parameters: {
+        docs: {
+            description: {
+                story: 'A accessible stack component',
+            },
+        },
+    },
     render: ({...args}) => <Stack {...args}>{createChildren(args.amountOfChildren)}</Stack>,
 };
 
@@ -175,6 +196,13 @@ export const Semantic: Story = {
         as: 'nav',
         'aria-label': 'Main navigation',
         gap: '3',
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'A semantic HTML element stack component',
+            },
+        },
     },
     render: ({...args}) => <Stack {...args}>{createChildren(args.amountOfChildren)}</Stack>,
 };
