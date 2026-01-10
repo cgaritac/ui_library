@@ -173,9 +173,9 @@ Contributions are welcome. Please:
 5. Open a Pull Request
 
 ## 📝 License
-
+```
 This project is private. All rights reserved.
-
+```
 ## 👤 Author
 
 **CGC**
