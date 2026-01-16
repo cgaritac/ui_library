@@ -1,4 +1,4 @@
-# 🎨 CGC UI Library
+## 🎨 CGC UI Library
 
 A modern and professional UI component library built with React and TypeScript. Designed to be flexible, accessible, and easy to use, providing reusable components that follow frontend development best practices.
 
