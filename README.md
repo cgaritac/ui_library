@@ -176,8 +176,6 @@ Contributions are welcome. Please:
 ```
 This project is private. All rights reserved.
 ```
-```
-```
 ## 👤 Author
 
 **CGC**
