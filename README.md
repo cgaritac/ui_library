@@ -173,11 +173,8 @@ Contributions are welcome. Please:
 5. Open a Pull Request
 
 ## 📝 License
-```
-This project is private. All rights reserved.
-```
-```
-```
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ## 👤 Author
 
 **CGC**
