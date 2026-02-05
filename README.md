@@ -1,17 +1,17 @@
-# 🎨 CGC UI Library
+# CGC UI Library
 
 A modern and professional UI component library built with React and TypeScript. Designed to be flexible, accessible, and easy to use, providing reusable components that follow frontend development best practices.
 
-## ✨ Features
+## Features
 
-- 🚀 **Built with React 19** - Uses the latest version of React for optimal performance
-- 📘 **TypeScript First** - Static typing for a better development experience
-- 🎭 **Integrated Storybook** - Interactive documentation and playground for all components
-- ♿ **Accessible** - Components designed following accessibility best practices
-- 🎨 **Highly Customizable** - Modular and easily customizable styles
-- 📦 **Lightweight and Modern** - Built with Vite for fast development and builds
+- **Built with React 19** - Uses the latest version of React for optimal performance
+- **TypeScript First** - Static typing for a better development experience
+- **Integrated Storybook** - Interactive documentation and playground for all components
+- **Accessible** - Components designed following accessibility best practices
+- **Highly Customizable** - Modular and easily customizable styles
+- **Lightweight and Modern** - Built with Vite for fast development and builds
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **React** 19.1.1
 - **TypeScript** ~5.9.3
@@ -21,7 +21,7 @@ A modern and professional UI component library built with React and TypeScript. 
 - **Playwright** - Browser testing
 - **ESLint** - Linting and code quality
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 
@@ -50,7 +50,7 @@ yarn dev
 npm run dev
 ```
 
-## 🚀 Usage
+## Usage
 
 ### Basic Example
 
@@ -72,7 +72,7 @@ function App() {
 }
 ```
 
-## 📚 Available Components
+## Available Components
 
 ### Button
 
@@ -114,7 +114,7 @@ A flexible layout component for organizing elements in a row or column.
 </Stack>
 ```
 
-## 🎨 Storybook
+## Storybook
 
 This project uses Storybook for interactive documentation and component development. To view all components and their variants:
 
@@ -138,7 +138,7 @@ yarn build-storybook
 npm run build-storybook
 ```
 
-## 📜 Available Scripts
+## Available Scripts
 
 - `yarn dev` - Starts the Vite development server
 - `yarn build` - Builds the application for production
@@ -147,7 +147,7 @@ npm run build-storybook
 - `yarn storybook` - Starts Storybook in development mode
 - `yarn build-storybook` - Builds a static version of Storybook
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ui_library/
@@ -162,7 +162,7 @@ ui_library/
 └── package.json
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome. Please:
 
@@ -172,13 +172,13 @@ Contributions are welcome. Please:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-## 👤 Author
+## Author
 
 **CGC**
 
 ---
 
-⭐ If you find this project useful, don't forget to give it a star!
+If you find this project useful, don't forget to give it a ⭐!
